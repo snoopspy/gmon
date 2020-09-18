@@ -1,0 +1,24 @@
+# --------------------------------------------------------------------------------
+# syntax : gmon <interface> [<new interface>]
+# sample : gmon wlan0 mon0
+# --------------------------------------------------------------------------------
+if [ -z "$1" ]; then
+	echo "syntax : gmon <interface> [<new interface>]"
+	echo "sample : gmon wlan0 mon0"
+	exit 1
+fi
+
+INTERFACE="$1"
+NEW_INTERFACE="$1"
+if [ ! -z "$2" ]; then
+	NEW_INTERFACE="$2"
+fi
+
+echo sudo ifconfig $INTERFACE down; sudo ifconfig $INTERFACE down
+if [ ! -z "$2" ]; then
+	echo sudo ip link set $INTERFACE name $NEW_INTERFACE; sudo ip link set $INTERFACE name $NEW_INTERFACE
+	echo sudo ifconfig $NEW_INTERFACE down; sudo ifconfig $NEW_INTERFACE down
+	# echo sleep 1; sleep 1
+fi
+echo sudo iwconfig $NEW_INTERFACE mode monitor; sudo iwconfig $NEW_INTERFACE mode monitor
+echo sudo ifconfig $NEW_INTERFACE up; sudo ifconfig $NEW_INTERFACE up
