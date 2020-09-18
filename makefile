@@ -1,6 +1,6 @@
 install:
-	cp gmon gman /usr/sbin
+	sudo cp gmon gman /usr/sbin
 
 uninstall:
-	rm /usr/sbin/gmon
-	rm /usr/sbin/gman
+	sudo rm /usr/sbin/gmon
+	sudo rm /usr/sbin/gman
