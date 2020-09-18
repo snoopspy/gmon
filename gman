@@ -1,3 +1,4 @@
+#!/bin/sh
 # --------------------------------------------------------------------------------
 # syntax : gman <interface> [<new interface>]
 # sample : gman mon0 wlan0
