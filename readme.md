@@ -24,4 +24,4 @@ sample : gman wlan0 mon0
 ```
 
 ## Youtube
-https://youtu.be/QRCSSK1-mk4
+https://youtu.be/NsnGbZDrzpg
