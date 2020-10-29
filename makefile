@@ -2,5 +2,5 @@ install:
 	sudo cp gmon gman /usr/sbin
 
 uninstall:
-	sudo rm /usr/sbin/gmon
-	sudo rm /usr/sbin/gman
+	sudo rm -f /usr/sbin/gmon
+	sudo rm -f /usr/sbin/gman
