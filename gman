@@ -5,7 +5,7 @@
 # --------------------------------------------------------------------------------
 if [ -z "$1" ]; then
 	echo "syntax : gman <interface> [<new interface>]"
-	echo "sample : gman wlan0 mon0"
+	echo "sample : gman mon0 wlan0"
 	exit 1
 fi
 

@@ -20,7 +20,7 @@ sample : gmon wlan0 mon0
 ## gman
 ```
 syntax : gman <interface> [<new interface>]
-sample : gman wlan0 mon0
+sample : gman mon0 wlan0
 ```
 
 ## Youtube
