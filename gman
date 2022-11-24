@@ -19,7 +19,7 @@ echo sudo ifconfig $INTERFACE down; sudo ifconfig $INTERFACE down
 if [ ! -z "$2" ]; then
 	echo sudo ip link set $INTERFACE name $NEW_INTERFACE; sudo ip link set $INTERFACE name $NEW_INTERFACE
 	echo sudo ifconfig $NEW_INTERFACE down; sudo ifconfig $NEW_INTERFACE down
-	# echo sleep 1; sleep 1
+	echo sleep 1; sleep 1
 fi
 echo sudo iwconfig $NEW_INTERFACE mode managed; sudo iwconfig $NEW_INTERFACE mode managed
 echo sudo ifconfig $NEW_INTERFACE up; sudo ifconfig $NEW_INTERFACE up
